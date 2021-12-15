@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centro de Cómputo</title>
+    <link href="css/login.css" rel="stylesheet" />
+    <link href="css/cabecera.css" rel="stylesheet" />
+    <link href="css/cuerpo.css" rel="stylesheet" />
+    <script src="./js/config.js"></script>
+    <script src="./js/login.js"></script>
+  </head>
+  <body>
+    <div id="contenedorcentrado">
+                <div id="login">
+                    <div id="loginform">
+                        <label for="usuario">Usuario</label>
+                        <input id="usuario" type="text" name="usuario" placeholder="Usuario" required>
+                        <label for="password">Contraseña</label>
+                        <input id="password" type="password" placeholder="Contraseña" name="password" required>
+                        <button onclick="login()">Login</button>
+                    </div>
+                </div>
+                <div id="derecho">
+                    <div class="titulo">
+                        Bienvenido
+                        <br>
+                        Centro de Cómputo UMT
+                    </div>
+                    <hr>
+                    <p>Si no dispone de una cuenta, por favor comuníquese con el encargado autorizado del centro de cómputo.</p> 
+                </div>
+            </div>
+  </body>
+</html>

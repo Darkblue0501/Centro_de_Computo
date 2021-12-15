@@ -1,0 +1,11 @@
+.contenedorTabla{
+    width: 94%;
+    float:inline-start;
+    margin-left: 3%;
+    margin-top: 1%;
+    background-color: var(--element-tres);;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: var(--element-dos);
+    border-style: solid;
+}

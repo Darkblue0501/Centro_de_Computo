@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centro de Cómputo</title>
+    <link href="./css/cuerpo.css" rel="stylesheet" />
+    <link href="./css/cabecera.css" rel="stylesheet" />
+    <link href="./css/index.css" rel="stylesheet" />
+    <link href="./css/tablaActividades.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Codigo para la cabereca de las paginas-->
+    <div class="cabecera">
+      <a href="./index.html">
+        <h1>Centro de Cómputo</h1>
+      </a>
+      <div class="menu">
+        <div class="home">
+          <a href="./index.html">
+            <img src="./img/home.png" alt="home" />
+          </a>
+        </div>
+        <ul>
+          <a id="Actividades" href="./controladores/actividades.html">
+            <li class="padre">
+              <p>Actividades</p>
+            </li>
+          </a>
+          <a id="Prestaciones" href="./controladores/prestaciones.html">
+            <li class="padre">
+              <p>Prestaciones</p>
+            </li>
+          </a>
+          <li class="padre">
+            <p>Reportes <img src="./img/more.png" alt="+" /></p>
+            <div class="subMenu">
+              <ul>
+                <a
+                  id="ActividadesInventario"
+                  href="./reportes/actividades.html"
+                >
+                  <li class="hijo">
+                    <p>Actividades</p>
+                  </li>
+                </a>
+                <a
+                  id="PrestacionesInventario"
+                  href="./reportes/prestaciones.html"
+                >
+                  <li class="hijo">
+                    <p>Prestaciones</p>
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </li>
+          <li class="padre">
+            <p>Inventarios <img src="./img/more.png" alt="+" /></p>
+            <div class="subMenu">
+              <ul>
+                <a id="Usuarios" href="./inventarios/usuarios.html">
+                  <li class="hijo" id="usuarios">
+                    <p>Usuarios</p>
+                  </li>
+                </a>
+                <a id="Clientes" href="./inventarios/clientes.html">
+                  <li class="hijo" id="clientes">
+                    <p>Clientes</p>
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <a href="./login.html">
+          <li class="logout" id="logoutbtn" onclick="">
+            <p>Cerrar Sesión</p>
+          </li>
+        </a>
+      </div>
+      <script>
+        const logout = () => {
+          sessionStorage.clear();
+          alert("Sesión Cerrada... Porfavor ingrese su contraseña de nuevo");
+          window.location.href = "./login.html";
+        };
+        if (sessionStorage.getItem("sesion") == "false") {
+          logout();
+        }
+        document
+          .getElementById("logoutbtn")
+          .setAttribute("onclick", "logout()");
+      </script>
+      <script src="./js/config.js"></script>
+    </div>
+    <br /><br /><br /><br /><br /><br />
+    <!--Fin de la cabecera-->
+
+    <h2>Lista de Actividades Próximas</h2>
+    <div class="contenedorTabla">
+      <div class="tabla">
+        <table>
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>Responsable</th>
+              <th>Salon</th>
+              <th>Fecha Inicio</th>
+              <th>Hora Inicio</th>
+              <th>Fecha Termino</th>
+              <th>Hora Termino</th>
+              <th>Observaciones</th>
+              <th>Autorizador</th>
+            </tr>
+          </thead>
+          <tbody id="datosTabla"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

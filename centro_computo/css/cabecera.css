@@ -1,0 +1,109 @@
+.cabecera{
+  width: 98%;
+  height: 80px;
+  margin-left: 1%;
+  padding-top: 10px;
+  background-color: var(--second-color);
+  border-radius: 0px 0px 25px 25px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.568);
+  position:fixed;
+}
+.cabecera h1{
+  font-size: 28px;
+  text-align: center;
+  color: var(--element-uno);
+  font-family: var(--text-font);
+}
+.home{
+  float: left;
+}
+.home img{
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.menu{
+  width: 96%;
+  height: 40px;
+  bottom: 0px;
+  float: left;
+  position: absolute;
+  margin-left: 2%;
+  background-color: var(--element-dos);
+}
+.cabecera a{
+  text-decoration: none;
+}
+.menu > ul{
+  float: left;
+  bottom: 0px;
+  list-style: none;
+}
+.subMenu > ul{
+  list-style: none;
+  background-color:var(--element-dos);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.568);
+  display: none;
+}
+.hijo{
+  width: 135px;
+  height: 40px;
+  text-align: center;
+  margin-left: 15px;
+  padding-top: 10px;
+  background-color: var(--element-tres);
+}
+.hijo > p{
+  color: var(--text-uno);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--text-font);
+}
+.hijo:hover{
+  background-color: var(--element-tres-hover);
+}
+.hijo:hover > p{
+  color: var(--text-uno-hover);
+}
+.padre > p, .logout > p{
+  margin-top: 10px;
+  margin-bottom: 12px;
+  color: var(--text-dos);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--text-font);
+}
+.padre{
+  background-color: var(--element-dos);
+}
+.padre:hover{
+  background-color:var(--element-dos-hover);
+}
+.padre:hover > p {
+  color: var(--text-dos-hover);
+}
+.padre:hover > .subMenu > ul{
+  display: block;
+}
+.padre, .logout{
+  width: 150px;
+  height: 40px;
+  float: left;
+  text-align: center;
+}
+.logout{
+  list-style: none;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: var(--element-rojo);
+}
+.logout:hover{
+  background-color: var(--element-rojo-hover);
+}
+.padre > p >img{
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right: 5px;
+}

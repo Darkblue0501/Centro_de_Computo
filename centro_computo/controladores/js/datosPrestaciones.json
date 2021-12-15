@@ -1,0 +1,16 @@
+[
+  {
+    "id": 0,
+    "NombreResponsable": "luis",
+    "ApellidoResponsable": "Mukul",
+    "Numero": "2",
+    "NombreEquipo" : "Laptop HP",
+    "FechaInicio": "2021-12-06",
+    "HoraInicio": "11:01",
+    "FechaTermino": "2021-12-07",
+    "HoraTermino": "11:01",
+    "Observaciones": " ",
+    "NombreAutorizador": "Eduardo",
+    "ApellidoAutorizador": "Chimal"
+  }
+]

@@ -1,0 +1,56 @@
+:root {
+  --background-color: #5433ff;
+  --background-color-segundo: #20bdff;
+  --background-color-tercero: #a5fecb;
+  --background-color-cuarto: rgb(30, 172, 238);
+  --border-element: rgb(76, 0, 255);
+  --border-element-secundary: rgb(93, 13, 241);
+
+  --first-color: rgb(24, 24, 24);
+  --second-color: rgb(241, 241, 241);
+  --thirty-color: rgb(41, 41, 41);
+
+  --element-uno: rgb(7, 26, 82);
+  --element-dos: rgb(8, 105, 114);
+  --element-tres: rgb(23, 185, 120);
+  --element-cuatro: rgb(167, 255, 131);
+  --element-uno-hover: rgb(7, 26, 82);
+  --element-dos-hover: rgb(0, 234, 255);
+  --element-tres-hover: rgb(23, 128, 120);
+  --element-cuatro-hover: rgb(93, 150, 70);
+
+  --element-rojo: rgb(221, 24, 24);
+  --element-rojo-hover: rgb(112, 11, 11);
+  
+  --text-uno: rgb(0, 0, 0);
+  --text-dos: rgb(255, 255, 255);
+  --text-uno-hover: rgb(231, 231, 231);
+  --text-dos-hover: rgb(0, 0, 0);
+  --text-font: Verdana, Geneva, Tahoma, sans-serif;
+  --font-weight :700;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: var(--background-color);
+  background: linear-gradient(
+    90deg,
+    var(--background-color) 30%,
+    var(--background-color-segundo) 80%,
+    var(--background-color-tercero)
+  );
+} 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body > h2{
+    margin-left: 4%;
+    font-family: var(--text-font);
+    font-size: 22px;
+    color:var(--second-color);
+    width: 94%;
+    text-align: left;
+}
