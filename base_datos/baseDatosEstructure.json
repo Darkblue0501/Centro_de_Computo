@@ -1,0 +1,26 @@
+[
+	{
+		"Tables_in_centro_computo" : "actividades"
+	},
+	{
+		"Tables_in_centro_computo" : "actividades_clientes"
+	},
+	{
+		"Tables_in_centro_computo" : "actividades_usuarios"
+	},
+	{
+		"Tables_in_centro_computo" : "clientes"
+	},
+	{
+		"Tables_in_centro_computo" : "prestaciones"
+	},
+	{
+		"Tables_in_centro_computo" : "prestaciones_clientes"
+	},
+	{
+		"Tables_in_centro_computo" : "prestaciones_usuarios"
+	},
+	{
+		"Tables_in_centro_computo" : "usuarios"
+	}
+]
